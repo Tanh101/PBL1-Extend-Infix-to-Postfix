@@ -158,7 +158,7 @@ int inToPost(char infix[], char postfix[], char tmp1[]){
         		tmp[l++] = infix[i++];
 			}
 			tmp[l] = '\0';
-			//moi ky tu dai dien cho mot ham de Push và stack
+			//moi ky tu dai dien cho mot ham de Push vï¿½ stack
 			if(strcmp(tmp, "sin") == 0)		Push('q');
 			else if(strcmp(tmp, "cos") == 0)	Push('w');
 			else if(strcmp(tmp, "tan") == 0)	Push('e');
@@ -298,7 +298,7 @@ float value(char postfix[],int *kt){
 	result = Pop();
 	return result;
 }
-
+//demo input
 //sin(30) + cos(0) - sqrt(4)
 // 1.5
 // log(10)*tan(45)-sin(90)+12.33*sin(30)
